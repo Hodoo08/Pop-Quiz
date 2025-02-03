@@ -1,3 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root {
+    --main-color: #0037b3; /*blue*/
+    
+  }
+
+header {
+    background-color: var(--main-color);
+}
+header h1 {
+    color: #ffffff;
+}
+
+.btn-custom {
+    background-color: #fe0879; /*hot pink*/
+}
+
+.btn-custom:hover {
+    background-color: #ff82e2; /*light pink*/
+}
