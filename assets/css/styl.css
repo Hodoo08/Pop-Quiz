@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #70baff;
+    background-color: #0037b3;
 }
 
 .popQuizBlitz {
@@ -29,14 +29,59 @@ body {
     padding-bottom: 30px;
 }
 
-.quiz {
+.Quiz {
     padding: 20px 0;
 
 }
-
-.quiz h2 {
-    font-size: 18px;
-    color: #ff82e2;
-    font-size: 25px;
+.Quiz {
+    font-size: 20px;
+    color: #fe0879;
     font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+
+#next-btn {
+    background: #0037b3;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #43df87;
+}
+
+.incorrect {
+    background: #df2626;
 }
