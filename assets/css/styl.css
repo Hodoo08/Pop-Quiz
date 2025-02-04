@@ -13,7 +13,7 @@ body {
 }
 
 .popQuizBlitz {
-    background:#fff;
+    background:#f4f008;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -68,31 +68,35 @@ body {
 
 }
 .Quiz {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Happy Monkey';
-    color: #2c43c5;
+    color: #fe0879;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
+
+#answer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .btn {
-    background: #fff;
-    color: #222;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
+    flex: 1 1 48%; /* Adjust the width of the buttons */
+    margin: 5px;
+    width: 50%;
     padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
+    color: #0e078d;
+    background-color: #f3f3f5;
+    border: 1px solid #060600;
     cursor: pointer;
-    transition: all 0.3s;
-    
+    text-align: center;
 }
 
 .btn:hover:not([disabled]) {
     background: #222;
-    color: #fff;
+    color: #e16f6f;
 }
 
 .btn:disabled {
@@ -111,6 +115,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     display: none;
+    padding: 20px;
 }
 
 #next-btn:hover {
@@ -119,11 +124,11 @@ body {
 }
 
 .correct {
-    background: #43df87;
+    background: #1ad56b;
 }
 
 .incorrect {
-    background: #df2626;
+    background: #d81717;
 }
 
 @keyframes shake {
