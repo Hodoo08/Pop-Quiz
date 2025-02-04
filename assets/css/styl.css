@@ -29,17 +29,39 @@ body {
     padding-bottom: 30px;
 }
 
+ .quiz-timer {
+    display: flex;
+    width: 70px;
+    color: #fff;
+    gap: 5px;
+    align-items: center;
+    background: #32313C;
+    border-radius: 6px;
+    padding: 7px 9px;
+    font-weight: 600;
+    transition: 0.2s ease;
+  }
+  .quiz-timer span {
+    font-size: 1.4rem;
+  }
+
 .progress-bar-container {
     width: 100%;
     background-color: #ffffff;
+    border-radius: 10px;
     border: #fe0879;
+    overflow: hidden; /* Ensures the progress bar stays within the container */
+    margin: 20px 0; 
 }
 
 .progress-bar {
     width: 0;
     height: 20px;
     background-color: #70baff;
+    border-radius: 10px; /* Rounded corners */
+    transition: width 0.3s ease; /* Smooth transition for the progress bar */
 }
+
 
 .Quiz {
     padding: 20px 0;

@@ -103,11 +103,11 @@ let score = 0;
 
 function startQuiz() {
     currentQuestionIndex = 0;
-    currentQuestionsIndex = 0; // Resets the progress bar
+    currentQuestionsIndex = 0; // Reset the progress bar index
     score = 0;
     nextButton.innerHTML = 'Next';
-    progressBar.style.display = "block"; // Shows the progress bar
-    updateProgressBar(); // Resets the progress bar
+    progressBar.style.display = "block"; // Show the progress bar
+    updateProgressBar(); // Reset the progress bar
     showQuestion();
 }
 
@@ -159,14 +159,14 @@ function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
     nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "Block";
-    progressBar.style.display = "none"; // Hides the progress bar
+    nextButton.style.display = "block";
+    progressBar.style.display = "none"; // Hide the progress bar
 }
     
 //Update the progress bar
 const progressBar = document.getElementById('progress-bar');
-const totalQuestions = 10;
-let currentQuestionsIndex = 1;
+const totalQuestions = questions.length; // Use the length of the questions array
+let currentQuestionsIndex = 0;
 
 function updateProgressBar() {
     const progress = (currentQuestionsIndex / totalQuestions) * 100;
@@ -197,6 +197,3 @@ nextButton.addEventListener('click', () => {
     }
 });
 startQuiz();
-
-
-
