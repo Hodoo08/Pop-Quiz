@@ -139,6 +139,10 @@ function selectAnswer(e) {
         score++;
     } else {
         selectedButton.classList.add('incorrect');
+        selectedButton.classList.add('shake');
+        setTimeout(() => {
+            selectedButton.classList.remove('shake');
+        }, 500); // Remove the shake class after the animation completes
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === 'true') {
