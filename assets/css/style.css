@@ -6,6 +6,10 @@
     
   }
 
+  body {
+    font-family: 'nunito', sans-serif;
+  }
+
 header {
     background-color: var(--main-color);
     padding: 1em;
@@ -77,15 +81,34 @@ img {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0 10px; /* Add horizontal margin to create space between buttons */
-    
+    margin: 0 10px; /* Add horizontal margin to create space between buttons */ 
 }
 
 .btn-custom:hover {
     background-color: #ff82e2; /*light pink*/
+    color: #000000
+}
+.btn-custom1 {
+    background-color: #0037b3;
+    color: #ffffff;
+}
+.btn-custom1:hover {
+    background-color: #70baff;
 }
 
+.btn-custom2 {
+    background-color: #fe0879;
+    color: #ffffff;
+}
+.btn-custom2:hover {
+    background-color: #ff82e2;
+}
 .modal-title {
     text-align: center;
     width: 100%;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
 }
