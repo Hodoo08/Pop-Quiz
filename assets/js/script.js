@@ -128,6 +128,8 @@ function showQuestion() {
         }    
         button.addEventListener('click', selectAnswer);
     });
+
+    nextButton.style.display = 'none'; // Hide the next button initially
 }
 
 function resetState() {
@@ -151,7 +153,7 @@ function selectAnswer(e) {
         selectedButton.classList.add('shake');
         setTimeout(() => {
             selectedButton.classList.remove('shake');
-        }, 500); // Remove the shake class after the animation completes
+        }, 500); // Removes the shake class after the animation completes
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === 'true') {
