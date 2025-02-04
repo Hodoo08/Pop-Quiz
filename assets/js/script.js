@@ -103,10 +103,11 @@ let score = 0;
 
 function startQuiz() {
     currentQuestionIndex = 0;
-    currentQuestionsIndex = 0; // Reset the progress bar index
+    currentQuestionsIndex = 0; 
     score = 0;
     nextButton.innerHTML = 'Next';
-    progressBar.style.display = "block"; // Show the progress bar
+    nextButton.style.display = 'none'; // Hide the next button initially
+    progressBar.style.display = "block"; 
     updateProgressBar(); // Reset the progress bar
     showQuestion();
 }
@@ -127,13 +128,20 @@ function showQuestion() {
         }    
         button.addEventListener('click', selectAnswer);
     });
+
+    nextButton.style.display = 'none'; // Hide the next button initially
 }
 
 function resetState() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
+    const buttonContainer = document.querySelector('.scr-btn-container');
+    if (buttonContainer) {
+        buttonContainer.remove();
+    }
 }
+
 function selectAnswer(e) {
     const selectedButton = e.target;
     const isCorrect = selectedButton.dataset.correct === 'true';
@@ -145,7 +153,7 @@ function selectAnswer(e) {
         selectedButton.classList.add('shake');
         setTimeout(() => {
             selectedButton.classList.remove('shake');
-        }, 500); // Remove the shake class after the animation completes
+        }, 500); // Removes the shake class after the animation completes
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === 'true') {
@@ -153,14 +161,35 @@ function selectAnswer(e) {
         }
         button.disabled = true;
     });
-    nextButton.style.display = 'block';
+    nextButton.style.display = 'block'; 
 }
+
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
-    nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "block";
+    nextButton.style.display = "none"; // Hide the next button
     progressBar.style.display = "none"; // Hide the progress bar
+
+    const retryButton = document.createElement('button');
+    retryButton.innerHTML = "Retry";
+    retryButton.classList.add('btn', 'btn-retry');
+    retryButton.addEventListener('click', () => {
+        startQuiz(); // Restart the quiz
+    });
+
+    const homeButton = document.createElement('button');
+    homeButton.innerHTML = "Home";
+    homeButton.classList.add('btn', 'btn-home');
+    homeButton.addEventListener('click', () => {
+        window.location.href = 'index.html'; // Redirect to the homepage
+    });
+
+    const buttonContainer = document.createElement('div');
+    buttonContainer.classList.add('scr-btn-container');
+    buttonContainer.appendChild(retryButton);
+    buttonContainer.appendChild(homeButton);
+
+    document.querySelector('.Quiz').appendChild(buttonContainer); // Append the button container
 }
     
 //Update the progress bar

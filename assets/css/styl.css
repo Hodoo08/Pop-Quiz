@@ -8,17 +8,34 @@
     box-sizing: border-box;   
 }
 
-body {
-    background-color: #0037b3;
+.image-container {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
 
 .popQuizBlitz {
-    background:#f4f008;
+    position: absolute; /* Position the quiz container absolutely */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the quiz container */
+    background:#ffffff;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    max-width: 600px;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
 }
 
 .popQuizBlitz h1 {
@@ -27,23 +44,10 @@ body {
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
 }
 
- .quiz-timer {
-    display: flex;
-    width: 70px;
-    color: #fff;
-    gap: 5px;
-    align-items: center;
-    background: #32313C;
-    border-radius: 6px;
-    padding: 7px 9px;
-    font-weight: 600;
-    transition: 0.2s ease;
-  }
-  .quiz-timer span {
-    font-size: 1.4rem;
-  }
 
 .progress-bar-container {
     width: 100%;
@@ -90,6 +94,7 @@ body {
     color: #0e078d;
     background-color: #f3f3f5;
     border: 1px solid #060600;
+    border-radius: 5px;
     cursor: pointer;
     text-align: center;
 }
@@ -108,6 +113,7 @@ body {
     background: #0037b3;
     color: #fff;
     font-weight: 500;
+    font-size: 1rem;
     width: 150px;
     border: 0;
     padding: 10px;
@@ -120,6 +126,38 @@ body {
 
 #next-btn:hover {
     background-color: #ff82e2;
+    color: #000000;
+}
+
+
+.scr-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add some space between the buttons */
+    margin-top: 20px;
+}
+
+.btn-home,
+.btn-retry {
+    background: #0037b3;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 100px;
+    height: 50px; 
+    border: 0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-home:hover,
+.btn-retry:hover {
+    background-color: #70baff;
     color: #000000;
 }
 
