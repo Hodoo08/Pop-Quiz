@@ -48,8 +48,8 @@ body {
 .progress-bar-container {
     width: 100%;
     background-color: #ffffff;
+    border: solid 2px #fe0879;
     border-radius: 10px;
-    border: #fe0879;
     overflow: hidden; /* Ensures the progress bar stays within the container */
     margin: 20px 0; 
 }
