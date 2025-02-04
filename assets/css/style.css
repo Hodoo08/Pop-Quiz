@@ -86,6 +86,7 @@ img {
 
 .btn-custom:hover {
     background-color: #ff82e2; /*light pink*/
+    color: #000000
 }
 .btn-custom1 {
     background-color: #0037b3;
