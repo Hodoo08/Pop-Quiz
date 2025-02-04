@@ -14,7 +14,7 @@ const questions = [
             { text: "Drake", correct: true },
             { text: "J Cole", correct: false },
             { text: "Big Sean", correct: false },
-            { text: "Big Sean", correct: false }
+            { text: "50 Cent", correct: false }
         ]
         
     },
@@ -103,8 +103,11 @@ let score = 0;
 
 function startQuiz() {
     currentQuestionIndex = 0;
+    currentQuestionsIndex = 0; // Resets the progress bar
     score = 0;
     nextButton.innerHTML = 'Next';
+    progressBar.style.display = "block"; // Shows the progress bar
+    updateProgressBar(); // Resets the progress bar
     showQuestion();
 }
 
@@ -157,16 +160,28 @@ function showScore() {
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "Block";
+    progressBar.style.display = "none"; // Hides the progress bar
 }
     
+//Update the progress bar
+const progressBar = document.getElementById('progress-bar');
+const totalQuestions = 10;
+let currentQuestionsIndex = 1;
+
+function updateProgressBar() {
+    const progress = (currentQuestionsIndex / totalQuestions) * 100;
+    progressBar.style.width = progress + '%';
+}
 
 function handleNextButton() {
     currentQuestionIndex++;
+    currentQuestionsIndex++; // Increases the progress bar by one
     if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
         showScore();
     }
+    updateProgressBar(); // Updates the progress bar after showing the next question
 }
 
 
@@ -182,3 +197,6 @@ nextButton.addEventListener('click', () => {
     }
 });
 startQuiz();
+
+
+

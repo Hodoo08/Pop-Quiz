@@ -29,6 +29,18 @@ body {
     padding-bottom: 30px;
 }
 
+.progress-bar-container {
+    width: 100%;
+    background-color: #ffffff;
+    border: #fe0879;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #70baff;
+}
+
 .Quiz {
     padding: 20px 0;
 
