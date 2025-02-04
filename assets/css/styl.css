@@ -79,6 +79,11 @@ body {
     display: none;
 }
 
+#next-btn:hover {
+    background-color: #ff82e2;
+    color: #000000;
+}
+
 .correct {
     background: #43df87;
 }
