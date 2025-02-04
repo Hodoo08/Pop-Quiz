@@ -88,7 +88,7 @@ const questions = [
             { text: "Drake", correct: false },
             { text: "Ed Sheeran", correct: false },
             { text: "Justin Bieber", correct: false },
-            { text: "Bad Bunny", correct: true }
+            { text: "Taylor Swift", correct: true }
         ]
         }
     ];
