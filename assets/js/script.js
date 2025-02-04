@@ -14,7 +14,7 @@ const questions = [
             { text: "Drake", correct: true },
             { text: "J Cole", correct: false },
             { text: "Big Sean", correct: false },
-            { text: "Big Sean", correct: false }
+            { text: "50 Cent", correct: false }
         ]
         
     },
@@ -88,7 +88,7 @@ const questions = [
             { text: "Drake", correct: false },
             { text: "Ed Sheeran", correct: false },
             { text: "Justin Bieber", correct: false },
-            { text: "Bad Bunny", correct: true }
+            { text: "Taylor Swift", correct: true }
         ]
         }
     ];
@@ -103,8 +103,11 @@ let score = 0;
 
 function startQuiz() {
     currentQuestionIndex = 0;
+    currentQuestionsIndex = 0; // Reset the progress bar index
     score = 0;
     nextButton.innerHTML = 'Next';
+    progressBar.style.display = "block"; // Show the progress bar
+    updateProgressBar(); // Reset the progress bar
     showQuestion();
 }
 
@@ -139,6 +142,10 @@ function selectAnswer(e) {
         score++;
     } else {
         selectedButton.classList.add('incorrect');
+        selectedButton.classList.add('shake');
+        setTimeout(() => {
+            selectedButton.classList.remove('shake');
+        }, 500); // Remove the shake class after the animation completes
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === 'true') {
@@ -152,17 +159,29 @@ function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
     nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "Block";
+    nextButton.style.display = "block";
+    progressBar.style.display = "none"; // Hide the progress bar
 }
     
+//Update the progress bar
+const progressBar = document.getElementById('progress-bar');
+const totalQuestions = questions.length; // Use the length of the questions array
+let currentQuestionsIndex = 0;
+
+function updateProgressBar() {
+    const progress = (currentQuestionsIndex / totalQuestions) * 100;
+    progressBar.style.width = progress + '%';
+}
 
 function handleNextButton() {
     currentQuestionIndex++;
+    currentQuestionsIndex++; // Increases the progress bar by one
     if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
         showScore();
     }
+    updateProgressBar(); // Updates the progress bar after showing the next question
 }
 
 

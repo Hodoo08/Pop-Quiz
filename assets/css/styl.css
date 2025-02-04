@@ -29,6 +29,40 @@ body {
     padding-bottom: 30px;
 }
 
+ .quiz-timer {
+    display: flex;
+    width: 70px;
+    color: #fff;
+    gap: 5px;
+    align-items: center;
+    background: #32313C;
+    border-radius: 6px;
+    padding: 7px 9px;
+    font-weight: 600;
+    transition: 0.2s ease;
+  }
+  .quiz-timer span {
+    font-size: 1.4rem;
+  }
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #ffffff;
+    border: solid 2px #fe0879;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the progress bar stays within the container */
+    margin: 20px 0; 
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #70baff;
+    border-radius: 10px; /* Rounded corners */
+    transition: width 0.3s ease; /* Smooth transition for the progress bar */
+}
+
+
 .Quiz {
     padding: 20px 0;
 
@@ -84,10 +118,27 @@ body {
     padding: 20px;
 }
 
+#next-btn:hover {
+    background-color: #ff82e2;
+    color: #000000;
+}
+
 .correct {
     background: #1ad56b;
 }
 
 .incorrect {
     background: #d81717;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s;
 }
