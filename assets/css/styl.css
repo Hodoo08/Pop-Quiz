@@ -35,7 +35,8 @@ body {
 }
 .Quiz {
     font-size: 20px;
-    color: #fe0879;
+    font-family: 'Happy Monkey';
+    color: #2c43c5;
     font-weight: 600;
     margin-bottom: 20px;
 }
