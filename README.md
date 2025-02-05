@@ -6,7 +6,18 @@ Pop Quiz Blitz is an Pop Culture Quiz made using HTML, CSS and JavaScript. It ha
 
 ## Responsivity Example Image
 
-TO BE INSERTED
+We have created a quiz which has interactive features and its design is responsive. We have created this quiz with the simple fact that it can be viewed from any device and will adjust to any type of device as we have added the various different breakpoints.
+
+# Home Page
+![Alt text](assets/images/Mobile%20breakpoint.png)
+![Alt text](assets/images/tablet%20breakpoint.png)
+¡[Alt text](assets/images/Max%20screen%20breakpoint.png)
+
+# Quiz Page 
+![Alt text](assets/images/quiz%20mobile%20breakpoint.png)
+![Alt text](assets/images/quiz%20tablet%20breakpoint.png)
+![Alt text](assets/images/quiz%20max%20screen%20breakpoint.png)
+
 
 ## Contents
 
@@ -38,7 +49,14 @@ The user stories were then turned into 'issues' using a project board which allo
 
 ## Wireframes
 
-(TO BE INSERTED)
+Below I have added the wireframes that were created by me and my teammate. We chose to go for a simple but yet effective design as we were creating a quiz we did not want the user to become too distracted if we had added many other features. We have included 2 wireframes one for the homepage and one for the quiz page itself.
+
+# Homepage Wireframe
+![Home Page Wireframe](assets/images/home-page%20wireframe.png)
+
+# Quiz Page Wireframe
+![Quiz Page Wirerame](assets/images/quizpage-wireframe.png)
+
 
 ## Design
 
@@ -105,4 +123,23 @@ We used HTML AND CSS validator, CSS autoprefixer, JS debugger, DevTools and Ligh
 
 
 
+
+
+
+
+
+
+
+
+
+
+# Wireframes
+
+Below I have added the wireframes that were created by me and my teammate. We chose to go for a simple but yet effective design as we were creating a quiz we did not want the user to become too distracted if we had added many other features. We have included 2 wireframes one for the homepage and one for the quiz page itself.
+
+# Homepage Wireframe
+![Home Page Wireframe](assets/images/home-page%20wireframe.png)
+
+# Quiz Page Wireframe
+![Quiz Page Wirerame](assets/images/quizpage-wireframe.png)
 
