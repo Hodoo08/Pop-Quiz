@@ -120,6 +120,7 @@ The process is as follows:
 We used HTML AND CSS validator, JS debugger, DevTools and Lighthouse.
 ![Html validator](assets/images/html-validator.png)
 ![Css validator](assets/images/css-validator.png)
+![JavaScript validator](assets/images/javascript-validator.png)
 ![Lighthouse](assets/images/lighthouse.png)
 
 ## Credits
