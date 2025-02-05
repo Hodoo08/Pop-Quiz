@@ -9,14 +9,14 @@ Pop Quiz Blitz is an Pop Culture Quiz made using HTML, CSS and JavaScript. It ha
 We have created a quiz which has interactive features and its design is responsive. We have created this quiz with the simple fact that it can be viewed from any device and will adjust to any type of device as we have added the various different breakpoints.
 
 ### Home Page
-![Alt text]()
-![Alt text]()
-¡[Alt text]()
+![Desktop homepage example](assets/images/desktop-hp.png)
+![Mobile and tablet example](assets/images/tablet-mobile-hp.png)
+
 
 ### Quiz Page 
-![Alt text]()
-![Alt text]()
-![Alt text]()
+![Desktop homepage example](assets/images/quiz-hp.png)
+![Mobile and tablet example](assets/images/tablet-mobile-quiz.png)
+
 
 
 ## Contents
