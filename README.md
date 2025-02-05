@@ -46,7 +46,7 @@ I used co-pilot to create 10 user stories. I asked co-pilot "i am creating a pop
 
 The user stories were then turned into 'issues' using a project board which allowed us to define the mvp and allocate tasks to prevent merge conflicts. 
 
-(INSERT SCREENSHOT OF PROJECT BOARD)
+![project board](assets/images/projects.png)
 
 
 ## Wireframes
@@ -68,9 +68,9 @@ During the planning for the design for our quiz we wanted to choose bold, vibran
 
 ### Imagery
 
-We also wanted a background image for the homepage so we looked on pexels (make the word a link for the website) for a image that best fits our theme and colour scheme. (insert actual image).
+We also wanted a background image for the homepage so we looked on pexels for a image that best fits our theme and colour scheme.
 We also used a contast colour checked to ensure the colours did not clash with each other.
-(inset screenshot)
+
 
 ### Typography
 
@@ -82,12 +82,10 @@ When looking for fonts for our quiz we wanted something looked 'fun' for our sta
 ### Homepage
 
 The homepage shows two buttons; 'Play' that starts the quiz and 'Rules' that makes a modal pop up explaining  the rules for the game.
-(insert image of homepage)
 
 ### Quiz page
 
 The quiz displays one question after the other, the user must select an answer or it times out before the next button is enabled.
-(insert image of quiz page)
 
 ## Future Features
 
@@ -120,8 +118,9 @@ The process is as follows:
 We used HTML AND CSS validator, JS debugger, DevTools and Lighthouse.
 ![Html validator](assets/images/html-validator.png)
 ![Css validator](assets/images/css-validator.png)
+![JavaScript validator](assets/images/javascript-validator.png)
+![Lighthouse](assets/images/lighthouse.png)
 
 ## Credits
 
-(TO BE INSERTED)
 
