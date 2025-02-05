@@ -55,7 +55,7 @@ Below I have added the wireframes that were created by me and my teammate. We ch
 ![Home Page Wireframe](assets/images/home-page_wireframe.png)
 
 ### Quiz Page Wireframe
-![Quiz Page Wirerame](assets/images/quizpage-wireframe.png)
+![Quiz Page Wireframe](assets/images/quizpage-wireframe.png)
 
 
 ## Design
@@ -115,7 +115,9 @@ The process is as follows:
 6.	Once it has created the folder with the name you chose you can being working in your workspace.
 
 ## Testing
-We used HTML AND CSS validator, CSS autoprefixer, JS debugger, DevTools and Lighthouse (insert screenshots of each result)
+We used HTML AND CSS validator, JS debugger, DevTools and Lighthouse.
+![Html validator](assets/images/html-validator.png)
+![Css validator](assets/images/css-validator.png)
 
 ## Credits
 
