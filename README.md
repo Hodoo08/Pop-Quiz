@@ -50,7 +50,7 @@ During the planning for the design for our quiz we wanted to choose bold, vibran
 
 We also wanted a background image for the homepage so we looked on pexels (make the word a link for the website) for a image that best fits our theme and colour scheme. (insert actual image).
 We also used a contast colour checked to ensure the colours did not clash with each other.
-(inset screenshot of colour checker)
+(inset screenshot)
 
 ### Typography
 
