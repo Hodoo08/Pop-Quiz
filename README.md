@@ -6,7 +6,7 @@ Pop Quiz Blitz is an Pop Culture Quiz made using HTML, CSS and JavaScript. It ha
 
 ## Responsivity Example Image
 
-TO BE INSERTED
+TO BE INSERTED!
 
 ## Contents
 
