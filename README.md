@@ -4,6 +4,8 @@
 
 Pop Quiz Blitz is an Pop Culture Quiz made using HTML, CSS and JavaScript. It has been designed and implemented by our team of two for our first Hackathon, for The Code Institute's 16-week AI-Augmented Full Stack Development course.
 
+View live site here: [https://lorealci.github.io/Pop-Quiz-Blitz/]
+
 ## Responsivity Example Image
 
 We have created a quiz which has interactive features and its design is responsive. We have created this quiz with the simple fact that it can be viewed from any device and will adjust to any type of device as we have added the various different breakpoints.
@@ -55,7 +57,7 @@ Below I have added the wireframes that were created by me and my teammate. We ch
 ![Home Page Wireframe](assets/images/home-page_wireframe.png)
 
 ### Quiz Page Wireframe
-![Quiz Page Wirerame](assets/images/quizpage-wireframe.png)
+![Quiz Page Wireframe](assets/images/quizpage-wireframe.png)
 
 
 ## Design
@@ -115,7 +117,9 @@ The process is as follows:
 6.	Once it has created the folder with the name you chose you can being working in your workspace.
 
 ## Testing
-We used HTML AND CSS validator, CSS autoprefixer, JS debugger, DevTools and Lighthouse (insert screenshots of each result)
+We used HTML AND CSS validator, JS debugger, DevTools and Lighthouse.
+![Html validator](assets/images/html-validator.png)
+![Css validator](assets/images/css-validator.png)
 
 ## Credits
 
