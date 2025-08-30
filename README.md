@@ -4,7 +4,7 @@
 
 Pop Quiz Blitz is an Pop Culture Quiz made using HTML, CSS and JavaScript. It has been designed and implemented by our team of two for our first Hackathon, for The Code Institute's 16-week AI-Augmented Full Stack Development course.
 
-View live site here: [https://lorealci.github.io/Pop-Quiz-Blitz/]
+View live site here: [https://hodoo08.github.io/Pop-Quiz/]
 
 ## Responsivity Example Image
 
